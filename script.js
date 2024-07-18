@@ -7,4 +7,4 @@ const intervalId = setInterval(() => {
   currentTime();
 }, 1000);
 
-setTimeout(() => clearInterval(intervalId), 5000);
+// setTimeout(() => clearInterval(intervalId), 5000);
