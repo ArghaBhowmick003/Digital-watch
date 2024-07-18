@@ -1,0 +1,67 @@
+.container {
+    width: 90%;
+    max-width: 1400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+.clockHolder {
+    width: 72rem;
+    background-color: #1b252a;
+    padding: 30px 50px;
+    border-radius: 15px;
+    border: 3px solid #f5ee62;
+    box-shadow: rgba(222, 238, 42, 0.1) 0px 4px 6px;
+    position: relative;
+}
+
+.clockHolder::after {
+    content: " ";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    width: 70%;
+    height: 15px;
+    background-color: #f5ee62;
+    transform: translate(-50%, 0);
+    border-radius: 3px 3px 8px 8px;
+}
+
+.clockHolder::before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 10px;
+    background-color: #f5ea4b77;
+    bottom: -25px;
+    left: -5%;
+    border-radius: 100%;
+    filter: blur(5px);
+}
+
+.timeHolder {
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+}
+
+.timeOptions {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    color: aliceblue;
+    gap: 1.2rem;
+}
+
+.mainDiv {
+    width: 100%;
+    text-align: center;
+}
+
+#clock {
+    font-size: 9.8rem;
+}
